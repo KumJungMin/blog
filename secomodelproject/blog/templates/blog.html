@@ -1,0 +1,22 @@
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</<head>
+
+
+<div class="head">
+    <div class="side_bar" style="background-color: white;">
+        <p class="title">BLOG</p>
+        <div class="menu">
+            <a class="a" href="{%url 'main' %}" style="text-decoration:none;">home</a>
+        </div>
+        <div class="menu">
+            <a class="a" href="{%url 'port' %}" style="text-decoration:none;">portfolio</a>
+        </div>
+    </div>
+    <img class="back_img1" src="{% static '3.png' %}" style="top: -712px;">
+</div>
+
+<div class="head" style="background-color:gray">
+</div>

@@ -1,0 +1,44 @@
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</<head>
+
+<div class="head">
+    <div class="side_bar" style="background-color: white; border-right: 1px solid rgba(77,77,77,0.5);">
+        <p class="title">PORT<br/>FOLIO</p>
+        <div class="menu">
+            <a class="a" href="{%url 'main' %}" style="text-decoration:none;">home</a>
+        </div>
+        <div class="menu">
+            <a class="a" href="{%url 'home' %}" style="text-decoration:none;">blog</a>
+        </div>
+    </div>
+    
+  {% comment %} style="background-image: url('4.png')" {% endcomment %}
+    <img class="back_img1" src="{% static '4.png' %}" style="top: -712px;">
+</div>
+
+<div class="head">
+  <div class="side_bar" style="background-color: gray;">
+    <p class="title" STYLE="color: white;">SKILLS</p>
+    <p style="color:white; position:relative; font-weight: bold; font-size: 32px; left: 520px; top: -42px;">어도비XD</p>
+    <p style="color:white; position:relative; font-weight: bold; font-size: 32px; left: 895px; top: -65px;">일러스트</p>
+    <p style="color:white; position:relative; font-weight: bold; font-size: 32px; left: 950px; top: 0px;">포토샵</p>
+    <p style="color:white; position:relative; font-weight: bold; font-size: 32px; left: 924px; top: 120px;">인디자인</p>
+    <p style="color:white; position:relative; font-weight: bold; font-size: 24px; left: 750px; top: 190px;">애프터이펙트</p>
+    <p style="color:black; position:relative; font-weight: bold; font-size: 32px; left: 410px; top: -280px;">장고</p>
+    <p style="color:black; position:relative; font-weight: bold; font-size: 24px; left: 330px; top: -130px;">루비온레일즈</p>
+    <p style="color:black; position:relative; font-weight: bold; font-size: 32px; left: 490px; top: -20px;">자바</p>
+  </div>
+  <img class="back_img1" src="{% static '5.png' %}" style="top: -712px;">
+  <img class="img1" src="{% static 'skill.png' %}">
+</div>
+
+<div class="head">
+    <div class="side_bar" style="background-color: white;">
+        <p class="title" STYLE="color: black;">ABOUT</p>
+    </div>
+    <img class="back_img1" src="{% static '661.png' %}" style="top: -712px;">
+    
+</div>

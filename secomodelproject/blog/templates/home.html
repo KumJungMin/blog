@@ -1,0 +1,52 @@
+
+{% comment %} template변수로 불러온다. 
+전달받은 객체를 퀴리셋이라고 한다.
+->우리는 객체(박스)가 아닌 객체 안의 내용을 출력하고 싶다.
+->그럴 때는, 아래와 같이 한다.(쿼리셋은 메소드를 이용해서 한다.)
+: 쿼리셋과 메소드의 표기방식
+-모델이름.쿼리셋     (objcets).메소드()
+
+
+{% endcomment %}
+
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% comment %} <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> {% endcomment %}
+</<head>
+
+
+<div class="head">
+    <div class="side_bar" style="background-color: white;">
+        <p class="title">BLOG</p>
+        <div class="menu">
+            <a class="a" href="{%url 'main' %}" style="text-decoration:none;">home</a>
+        </div>
+        <div class="menu">
+            <a class="a" href="{%url 'port' %}" style="text-decoration:none;">portfolio</a>
+        </div>
+    </div>
+    <img class="back_img1" src="{% static '3.png' %}" style="top: -712px;">
+</div>
+
+<div class="head" style="background-color:white; padding-left: 60px;">
+<br>
+    <div style="width: 80px; height: 30px; border: 1px solid gray; background-color: white; border-radius:0.2em;">
+        <a style="text-decoration: none; color: gray; position: relative; top: 7px; left: 19px;" href="{%url 'new' %}">글쓰기</a>
+    </div>
+<br>    
+    {% for blog in blogs.all%}
+    {% comment %} 블로그객체s에 있는 blog만큼 반복한다. {% endcomment %}     
+        <div style="width: 1100px; height: 200px; border: 2px solid rgba(120,120,120,0.1); border-radius:0.5em;">    
+            <h1> 제목: {{blog.title}}</h1>
+            <p>날짜: {{blog.pub_date}}</p>
+            <p>본문 미리보기: {{blog.summary}}<br>
+            <a style="float: right; color: gray; font-weight: bold;" href="{%url 'detail' blog.id%}">...more</a></p> 
+        <div>    
+        <br>
+        <br>
+        <br>
+    {% endfor %}    
+</div>

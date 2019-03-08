@@ -1,0 +1,19 @@
+
+
+{% comment %} <form action="{% url 'create' %}">
+    <h4>title: </h4>
+    <input type="text" name="title" style="font-size: 17px; width: 900px;">
+    <br>
+    <br>
+    <h4>body: </h4>
+    <textarea cols=130 rows=20 name="body" style="font-size: 17px;"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="제출">
+</form> {% endcomment %}
+
+<form method = "POST">
+{   {{form}}
+<br>
+    <input type="submit" value="제출하기">
+</form>    

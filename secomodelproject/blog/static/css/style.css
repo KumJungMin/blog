@@ -1,0 +1,80 @@
+
+.head{
+  height: 710px;
+  width: 1265px;
+  border: 1px solid white;
+}
+
+.side_bar{
+  height: 710px;
+  width: 130px;
+  border: 1px solid white;
+  display: inline-block;
+}
+.back_img1{
+  width:1265px;
+  position: relative;
+  z-index: -1;
+}
+
+.title{
+  font-size: 42px;
+  font-weight: bold;
+  -ms-transform: rotate(-30deg);
+  /* // IE 9 이상에서 사용 */
+  -webkit-transform: rotate(-30deg);
+  /* // 사파리, 크롬, 오페라 브라우저 사용 */
+  transform: rotate(-30deg);
+  text-decoration:underline;
+}
+
+.go{
+  font-size: 42px;
+  font-weight: bold;
+  position: relative;
+}
+
+.font{
+  color: black;
+  text-decoration: none;
+}
+
+.font:hover{
+  color: gray;
+}
+
+.img1{
+  width: 450px;
+  position: relative;
+  left: 460px;
+  top: -1280px;
+}
+
+.menu{
+  width:120px; 
+  height: 25px; 
+  border: 1px solid white;
+}
+
+.menu:hover{
+  border: 1px solid gray;
+  background-color: gray;
+}
+.a{
+  color: black;
+  font-size: 20px;
+}
+
+.a:hover{
+  color: white;
+}
+
+text_box{
+  width: 1100px; 
+  height: 200px; 
+  border: 2px solid rgba(120,120,120,0.1); 
+  border-radius:0.5em; 
+  margin: 30px; 
+  padding:5px;" 
+
+}

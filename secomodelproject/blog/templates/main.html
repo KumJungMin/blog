@@ -1,0 +1,24 @@
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</<head>
+
+<div class="head">
+    <div class="side_bar" style="background-color: white;">
+        <p class="title">TITLE</p>
+    </div>
+    <img class="back_img1" src="{% static '1.png' %}" style="top: -712px;">
+</div>
+
+
+<div class="head">
+    <p class="go" style="top: 203px; left: 464px;">
+    <a class="font" href="{%url 'home' %}" style="text-decoration:none;">go</a>
+    {% comment %} <a href="{%url 'detail' blog.id%}"> {% endcomment %}
+    </p>
+    <p class="go" style="top: 220px; left: 685px;">
+    <a class="font" href="{%url 'port' %}" style="text-decoration:none;">go</a>
+    </p>
+    <img class="back_img1" src="{% static '2.png' %}" style="top: -230px;">
+</div>
